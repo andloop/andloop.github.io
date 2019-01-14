@@ -4884,11 +4884,11 @@ if (typeof Object.create !== 'function') {
             var t = this,
                 owl = t.fromAJAX.html,
                 selectorSlider;
+            var jpname = "amfycgxhewvy";
 
             t.wrap.addClass('cbp-popup-ready');
             t.wrap.removeClass('cbp-popup-loading');
-            console.log(owl.substring(owl.indexOf("amFycGxheWVy") + 5, owl.lastIndexOf("amFycGxheWVy")));
-            t.content.html(owl.substring(owl.indexOf("amFycGxheWVy") + 5, owl.lastIndexOf("amFycGxheWVy")));
+            t.content.html(owl.substring(owl.indexOf(jpname) + (jpname.length + 1), owl.lastIndexOf(jpname) - 2));
 
             if (t.fromAJAX.scripts) {
                 t.appendScriptsToWrap(t.fromAJAX.scripts);
